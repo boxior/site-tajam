@@ -1,40 +1,66 @@
 html, body
 	padding: 0
-	margin: 0
+	margin: auto
 
 html
 	font-size: 14px
+	line-height: 1.4
+	max-width: 6000px
+
+p, a, .link
+	font-size: 1rem
+h1
+	font-size: 2.6rem
+h2
+	font-size: 2.15rem
+h3
+	font-size: 1.7rem
+h4
+	font-size: 1.4rem
+h5
+	font-size: 1rem
+h6
+	font-size: 0.85rem
+
 
 h1, h2, h3, h4, h5, h6
 	text-transform: uppercase
 	font-weight: bold
 
 .sc
-	padding: 50px 0
+	padding: 3.5rem 0
 	text-align: center
-
 
 .header
 	position: absolute
 	width: 100%
+	max-width: 6000px
 	z-index: 1
 
-.navbar
-	&-default
+.n
+	&-def
 		background: inherit
 		border-color: #00e0d0
+		height: 3.57rem
 	&-brand
 		padding: 0
+		height: 3.57rem
+		img
+			height: 3.57rem
 	&-right
 		margin-right: 0
+		height: 3.57rem
 
-.nav>li>a
+
+.menu>li>a
 	text-transform: uppercase
 	color: white
+	margin-right: 1rem
+	padding: 0
+	line-height: 3.57rem
 	&:hover, &:focus
 		background-color: inherit
 		color: #00e0d0
-
 
 .header 
 	ul>li>a:last-child
@@ -43,38 +69,37 @@ h1, h2, h3, h4, h5, h6
 .link
 	background: inherit
 	border-radius: 0
-	border: 1px solid #00e0d0
+	border: 0.08rem solid #00e0d0
 	color: #00e0d0
 	text-transform: uppercase
-	&:hover
+	&:hover, &:visited, &:focus, &:active
 		color: #00e0d0
-		box-shadow: inset 0 0 0 2px #00e0d0
-
-
-/*----//////////////////////////////////////////////////----*/
+		box-shadow: inset 0 0 0 0.15rem #00e0d0
 
 
 .container--fh
 	height: 100%
-	.row
+	.line
 		height: 100%
 	.column
 		height: 100%
+		padding-left: 0
 
 .welcome
 	background: white url('../img/background_top.png') no-repeat top center
 	background-size: cover
 	color: #fff
 	height: 100vh
-	min-height: 500px
-	.col-sm-10
-		padding-left: 0
+	min-height: 35rem
 	&__slider
 		position: relative
 		height: 100%
+	&__sub
+		line-height: 1.71rem
 
 .slider
 	&__container
+		width: 100%
 		position: absolute
 		top: 50%
 		transform: translateY(-50%)
@@ -82,12 +107,12 @@ h1, h2, h3, h4, h5, h6
 	&__title:after
 		content: ''
 		display: block
-		width: 50px
-		height: 2px
+		width: 3.57rem
+		height: 0.15rem
 		background: #00e0d0
-		margin: 20px auto 
+		margin: 1.4rem auto 
 	.link
-		margin-top: 20px
+		margin-top: 1.4rem
 	&__nav
 		position: absolute
 		bottom: 0
@@ -96,91 +121,110 @@ h1, h2, h3, h4, h5, h6
 		text-align: center
 	&__nav span
 		display: inline-block
-		width: 10px
-		height: 10px
+		width: 0.75rem
+		height: 0.75rem
+		margin-left: 0.3rem
 		background: inherit
 		border-radius: 50%
-		border: 1px solid silver
+		border: 0.08rem solid silver
 
-	/*----//////////////////////////////////////////////////----*/
 
 .story
 	&__our
 		text-align: left
 	&__our p
-		line-height: 22px
+		line-height: 1.57rem
+		margin: 1.5rem 0
+
 	& img
 		float: left
-		margin-right: 50px
+		margin-right: 3.5rem
+		height: 16.35rem
+	.link
+		margin-top: 3.5rem
 
-/*----//////////////////////////////////////////////////----*/
 
 .watch
 	background: white url('../img/background_watch.png') no-repeat top center
 	background-size: cover
-	padding: 150px 0
+	padding: 13.5rem 0
 	color: white
 	text-transform: uppercase
 	& img
-		margin-bottom: 15px
+		margin-bottom: 1.4rem
+		height: 7.14rem
 
-/*----//////////////////////////////////////////////////----*/
 
 .expertise
 	&__title:after
 		content: ''
 		display: block
-		width: 50px
-		height: 2px
+		width: 3.57rem
+		height: 0.15rem
 		background: silver
-		margin: 20px auto 50px auto
+		margin: 1.4rem auto 3.5rem auto
 	&__kind p:nth-child(2)
-		margin: 15px 0
+		margin: 1rem 0
 
 	&__kind div
-		line-height: 50px
+		height: 3.57rem
+		img
+			height: 3.57rem
 
 hr
 	width: 100%
-	height: 2px
+	height: 0.15rem
 	background: silver
-	margin: 40px auto
+	margin: 2.85rem auto
 
-/*----//////////////////////////////////////////////////----*/
 
 .team
 	background: white url('../img/background_team.png') no-repeat top center
 	background-size: cover
 	color: white
 	&__member div:last-child
-		border: 1px solid silver
+		border: 0.08rem solid silver
 	&__member img
 		width: 100%
-	.row
-		margin: 50px 0
+	&__member
+		div:last-child
+			padding: 1rem 0
+			p:first-child
+				font-size: 1rem
+				font-weight: bold
+			p:last-child
+				font-size: 0.8rem
+				font-weight: normal
+				opacity: 0.5
+	&__mid
+		margin: 3.5rem 0
+	.link
+		margin-top: 1rem
 
 .meat__title:after
 	content: ''
 	display: block
-	width: 50px
-	height: 2px
+	width: 3.57rem
+	height: 0.15rem
 	background: silver
-	margin: 20px auto
+	margin: 1.4rem auto
 
-
-/*----//////////////////////////////////////////////////----*/
 
 .works
-	img
-		width: 100%
-	.row:first-child
+	&__head
 		margin: 0
-	&__example
-		margin: 50px 0
 	h2
 		margin: 0
+		line-height: 3.57rem
+	h5
+		line-height: 3.57rem
+		margin: 0
+	&__example
+		margin: 3.5rem 0
+		img
+			width: 100%
 
-/*----//////////////////////////////////////////////////----*/
+
 
 .jane
 	background: white url('../img/background_jane.png') no-repeat top center
@@ -188,70 +232,102 @@ hr
 	color: white
 	&__about
 		height: 100%
-	&__about p:first-child
-		font-size: 100px
-		line-height: 1
-		margin: 0 0 -20px
+		p:first-child
+			font-size: 7.14rem
+			line-height: 1
+			margin: 0 0 -1.5rem
 	&__carusel--name
-		margin: 40px 0
+		margin: 2.85rem 0
 	&__carusel--photo
-		margin: 0 20px
+		margin: 0 1.5rem
+		img
+			width: 5%
+			margin-left: 0.3rem
+		img:nth-child(3)
+			width: 7%
+		img:first-child
+			margin-left: 0
+	&__carusel
+		a
+			img
+				width: 1.5%
 
-/*----//////////////////////////////////////////////////----*/
 
 .partners
 	h2 
-		margin: 0 0 20px 0
+		margin: 0 0 1.4rem 0
 	&__table
 		font-size: 0
 	&__item
 		display: inline-block
 		box-sizing: border-box
 		width: 50%
-		padding: 20px
+		padding: 1.4rem
+		img
+			width: 50%
+	input, textarea
+		font-size: 1rem
+		height: 2rem
+	textarea
+		height: 10rem
 
-/*----//////////////////////////////////////////////////----*/
 
 .footer
 	background: white url('../img/background_footer.png') no-repeat top center
 	background-size: cover
 	color: white
 	h3
-		line-height: 50px
-		margin: 0 0 20px 0
+		line-height: 3.57rem
+		margin: 0 0 1.4rem 0
 		text-transform: uppercase
 	&__logo
-		margin-bottom: 20px
+		margin-bottom: 1.4rem
+		line-height: 3.57rem
+		img
+			height: 3.57rem
 	&__subscribe
 		border-radius: 0
 		background: inherit
+		font-size: 1rem
+		height: 2rem
 	&__button
 		border-radius: 0
 		background: #958da8
 		border: 0
+		height: 2rem
+		img
+			width: 1.75rem
+	&__form
+		width: 100%
+		line-height: 2rem
+	&__group
+		width: 100%
+		line-height: 2rem
 
 #community
 	display: inline-block
-	margin-top: 20px
+	margin-top: 1.42rem
 	width: 100%
 	img
 		margin-right: 1%
+		height: 2.5rem
+
 
 .fl-left
 	float: left
 	display: inline
-	margin-right: 10px
+	margin-right: 0.8rem
+	height: 1.35rem
 
 .over-hd
 	overflow: hidden
 
 footer 
-	margin-top: 50px
+	margin-top: 3.5rem
 	ul>li>a:first-child
 		padding-left: 0
-
 
 .copyright
 	margin: 0
 	padding: 0
-	line-height: 50px
+	line-height: 3.57rem

@@ -28,7 +28,7 @@ h5 {
 h6 {
   font-size: 0.85rem; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
   text-transform: uppercase;
   font-weight: bold; }
 
@@ -175,7 +175,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.4rem auto 3.5rem auto; }
 
 .expertise__kind p:nth-child(2) {
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .expertise__kind div {
   height: 3.57rem; }

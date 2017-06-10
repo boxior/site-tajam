@@ -6,9 +6,52 @@
 			position: absolute
 			background: #382d5c
 
+	.story
+		img
+			margin: 0
+			float: none
+		&__our:before
+			content: ''
+			clear: both
+			display: block
+
+	.works--fl-none
+		float: none!important
+
+	.jane__carusel
+		img
+			width: 10%
+		img:nth-child(3)
+			width: 15%
+		a
+			img
+				width: 3%
+
+	.partners__form
+		margin-bottom: 2rem
+	
+	.footer
+		ul
+			li
+				display: inline-block
+			li:first-child
+				margin-left: 15px
+		&__subscribe
+			height: 4rem
+			font-size: 1.5rem
+			width: 70%
+			float: left
+			margin-right: 0.5rem
+		&__button
+			width: 4rem
+			height: 4rem
+
+	.copyright
+		width: 100%
+
 @media screen and (min-width: 768px) and (max-width: 991px)
 	html
-		font-size: 14px
+		font-size: 12px
 
 @media screen and (min-width: 992px) and (max-width: 1199px)
 	html

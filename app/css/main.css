@@ -107,6 +107,12 @@ h1, h2, h3, h4, h6 {
   .welcome__sub {
     line-height: 1.71rem; }
 
+.wel {
+  height: 100vh;
+  background: white url("../img/background_top.png") no-repeat top center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
 .slider__container {
   width: 100%;
   position: absolute;

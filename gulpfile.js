@@ -55,12 +55,12 @@ gulp.task('img', function() {
 });
 
 gulp.task('watch', ['browser-sync'], function() {
-  gulp.watch('app/sass/**/*.sass', ['sass']);
+  gulp.watch('app/css/**/*.css', ['sass']);
   gulp.watch('app/*.html', browserSync.reload);
 });
 
 gulp.task('build', ['clean', 'img', 'sass'], function() {
-  var buildCss = gulp.src('app/css/*.css')
+  var buildCss = gulp.src('app/css/**/*.css')
   .pipe(gulp.dest('docs/css'));
 
   var buildFonts = gulp.src('app/fonts/**/*')

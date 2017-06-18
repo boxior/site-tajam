@@ -1,3 +1,11 @@
+@media screen and (max-width: 400px)
+	.jane
+		&__left
+			left: -10rem
+		&__right
+			left: 10rem
+
+
 @media screen and (max-width: 767px)
 	html
 		font-size: 14px
@@ -15,17 +23,22 @@
 			clear: both
 			display: block
 
-	.works--fl-none
-		float: none!important
+	.works
+		&--fl-none
+			float: none!important
+		&__example
+			width: 50%
 
-	.jane__carusel
-		img
-			width: 10%
-		img:nth-child(3)
-			width: 15%
-		a
-			img
-				width: 3%
+
+	.expertise__kind
+		margin-top: 3rem
+		&:first-child
+			margin-top: 0
+
+	hr
+		visibility: hidden
+		margin: 0
+
 
 	.partners__form
 		margin-bottom: 2rem
@@ -63,17 +76,28 @@
 
 @media screen and (min-width: 1600px) and (max-width: 1899px)
 	html
-		font-size: 25px
+		font-size: 20px
 
 @media screen and (min-width: 1900px) and (max-width: 2499px)
 	html
-		font-size: 30px
+		font-size: 20px
+
 @media screen and (min-width: 2500px) and (max-width: 4999px)
 	html
 		font-size: 40px
+	.container, .header
+		width: 2500px
+	.header
+		left: 50%
+		transform: translateX(-50%)
+
 @media screen and (min-width: 5000px)
 	html
-		font-size: 80px
-
-	
+		font-size: 40px
+	.container, .header
+		width: 2500px
+	.header
+		width: 2500px
+		left: 50%
+		transform: translateX(-50%)
 

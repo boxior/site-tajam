@@ -1,17 +1,16 @@
-@import url(../css/libs/bootstrap-theme.css);
-@import url(../css/libs/bootstrap.css);
+@import url(../css/bootstrap-theme.css);
+@import url(../css/bootstrap.css);
 @font-face {
-  font-family: "glyphicons-halfings-regular";
-  src: url("../fonts/glyphicons-halfings-regular.eot");
-  src: url("../fonts/glyphicons-halfings-regular.svg") format("svg");
-  src: url("../fonts/glyphicons-halfings-regular.ttf") format("truetype");
-  src: url("../fonts/glyphicons-halfings-regular.woff") format("woff");
-  src: url("../fonts/glyphicons-halfings-regular.woff2") format("woff2"); }
+  font-family: "glyphicons-halflings-regular";
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.svg") format("svg");
+  src: url("../fonts/glyphicons-halflings-regular.ttf") format("true type");
+  src: url("../fonts/glyphicons-halflings-regular.woff") format("woff");
+  src: url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"); }
 
 html, body {
   padding: 0;
-  margin: auto;
-  font-family: 'glyphicons-halfings-regular'; }
+  margin: auto; }
 
 html {
   font-size: 14px;
@@ -45,7 +44,8 @@ h1, h2, h3, h4, h6 {
 
 .sc {
   padding: 3.5rem 0;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .header {
   position: absolute;
@@ -123,6 +123,7 @@ h1, h2, h3, h4, h6 {
 
 .slider__container {
   width: 100%;
+  height: 70%;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -348,7 +349,6 @@ hr {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
     .jane__left--g, .jane__right--g {
-      font-family: 'glyphicons-halfings-regular';
       font-size: 3rem; }
   .jane__left {
     left: -12rem; }
@@ -468,7 +468,18 @@ footer {
     font-size: 14px; }
   .header .menu {
     position: absolute;
-    background: #382d5c; }
+    width: 100%;
+    margin: auto;
+    background: #382d5c;
+    opacity: 0.97;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .header .menu li {
+      text-align: center; }
+      .header .menu li a {
+        margin-right: 0; }
   .story img {
     margin: 0;
     float: none; }

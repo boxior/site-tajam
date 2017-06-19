@@ -10,7 +10,7 @@ var browserSync = require('browser-sync'),
     sass = require('gulp-sass');
 
 gulp.task('sass', function() {
-  return gulp.src('app/sass/**/*.sass')
+  return gulp.src('app/sass/style.sass')
   .pipe(sass())
   .pipe(autoprefixer(['last 15 versions', '>1%', 'ie 8', 'ie 7'], {cascade: true}))
   .pipe(gulp.dest('app/css'))
@@ -55,7 +55,7 @@ gulp.task('img', function() {
 });
 
 gulp.task('watch', ['browser-sync'], function() {
-  gulp.watch('app/css/**/*.css', ['sass']);
+  gulp.watch('app/sass/**/*.sass', ['sass']);
   gulp.watch('app/*.html', browserSync.reload);
 });
 

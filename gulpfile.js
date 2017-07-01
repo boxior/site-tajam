@@ -60,7 +60,7 @@ gulp.task('watch', ['browser-sync'], function() {
 });
 
 gulp.task('build', ['clean', 'img', 'sass'], function() {
-  var buildCss = gulp.src('app/css/**/*.css')
+  var buildCss = gulp.src('app/css/*.css')
   .pipe(gulp.dest('docs/css'));
 
   var buildFonts = gulp.src('app/fonts/**/*')

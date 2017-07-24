@@ -40,7 +40,8 @@ h6, .h6 {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h6, .h6 {
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  display: block; }
 
 .sc {
   padding: 3.5rem 0;

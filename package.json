@@ -1,21 +1,33 @@
 {
-  "name": "gulp-tajam-site",
+  "name": "site-tajam",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "https://boxior.github.io/site-tajam/",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boxior/site-tajam.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boxior/site-tajam/issues"
+  },
+  "homepage": "https://github.com/boxior/site-tajam#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "del": "^2.2.2",
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
+    "del": "^2.2.2",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cache": "^0.4.6",
     "gulp-cssnano": "^2.1.2",
     "gulp-imagemin": "^3.3.0",
+    "gulp-notify": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "imagemin-pngquant": "^5.0.1"
